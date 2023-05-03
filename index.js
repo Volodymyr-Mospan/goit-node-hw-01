@@ -6,10 +6,10 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       const allContacts = await contacts.listContacts();
       return console.log(allContacts);
     case "getContactById":
-      const contact = await contacts.getContactById();
+      const contact = await contacts.getContactById(id);
       return console.log(contact);
   }
 };
 
 // console.log(contacts.listContacts());
-invokeAction({ action: "getContactById", id: 1 });
+invokeAction({ action: "getContactById", id: "1" });
