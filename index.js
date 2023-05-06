@@ -1,3 +1,4 @@
+const argv = require('yargs').argv;
 const contacts = require('./contact');
 
 const invokeAction = async ({ action, id, name, email, phone }) => {
@@ -14,8 +15,16 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
         case 'addContact':
             const addedContact = await contacts.addContact(name, email, phone);
             return console.log(addedContact);
+        case 'help':
+            return console.log(
+                'listContacts - to see all contacts \ngetContactById - to see contact \nremoveContact - to remove contact \nremoveContact - to add contact \nhelp - to see all actions'
+            );
+        default:
+            return console.log('Unknow action! Input "-- action help" to see all actions');
     }
 };
+
+invokeAction(argv);
 
 // invokeAction({ action: "listContacts"});
 // invokeAction({ action: 'getContactById', id: '1' });
