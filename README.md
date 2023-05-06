@@ -11,7 +11,7 @@
 ![--action get](https://i.ibb.co/F8Mt3hC/get.png)
 
 --action add --name 'user name' --email 'user email' --phone 'user phone' -виводить необхідний
-контакт, ![--action add](https://i.ibb.co/2yxLV43/add.png)
+контакт, ![--action add](https://i.ibb.co/hZY430F/add.png)
 
 --action remove --id 'user id' -видаляє необхідний контакт,
 ![--action remove](https://i.ibb.co/hCn9FHw/remove.png)
