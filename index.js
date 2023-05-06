@@ -20,12 +20,12 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 // invokeAction({ action: "listContacts"});
 // invokeAction({ action: 'getContactById', id: '1' });
 // invokeAction({ action: 'removeContact', id: '1' });
-invokeAction({
-    action: 'addContact',
-    name: 'Volodymyr',
-    email: 'mospan.volodymyr@gmail.com',
-    phone: '(063) 030-7592',
-});
+// invokeAction({
+//     action: 'addContact',
+//     name: 'Volodymyr',
+//     email: 'mospan.volodymyr@gmail.com',
+//     phone: '(063) 030-7592',
+// });
 
 //   {
 //     "id": "1",
